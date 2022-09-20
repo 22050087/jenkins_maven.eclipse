@@ -19,10 +19,10 @@ class TestUser {
 	@Test
 	void testUserEmptyConstructor() {
 		User user = new User();
-		assertEquals("", user.getFirstName());
-		assertEquals("", user.getLastName());
-		assertEquals("", user.getEmail());
-		assertEquals("", user.getPassword());
+		assertEquals(null, user.getFirstName());
+		assertEquals(null, user.getLastName());
+		assertEquals(null, user.getEmail());
+		assertEquals(null, user.getPassword());
 	}
 
 	@Test
